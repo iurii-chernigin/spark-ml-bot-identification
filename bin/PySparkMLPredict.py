@@ -15,7 +15,12 @@ def main(data_path, model_path, result_path):
     :param result_path: путь куда нужно сохранить результаты предсказаний ([session_id, prediction]).
     """
     spark = _spark_session()
-    #TODO Ваш код.
+    model = PipelineModel.load(model_path)
+
+    validation_df = spark.read.parquet(data_path)
+    validation_result_df = model.transform(validation_df)
+    validation_result_df.select('session_id', 'prediction') \
+                .write.mode('overwrite').parquet(result_path)
 
 
 def _spark_session():
