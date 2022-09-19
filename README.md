@@ -3,7 +3,7 @@
 - Spark ML
 ## Context
 We have statistics on user sessions, where some of them are [web crawlers](https://en.wikipedia.org/wiki/Web_crawler), we need to identificate such sessions to prevent bot activity.
-### Data
+## Data
 
 | Field  | Description |
 | ------------- | ------------- |
