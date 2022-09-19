@@ -6,7 +6,7 @@ We have statistics on user sessions, where some of them are [web crawlers](https
 ## Data
 
 | Field  | Description |
-| ------------- | ------------- |
+| :----- | :---------- |
 | session_id | ID of user session  |
 | user_type | User type: authorized or guest |
 | duration | Session duration in secs |
