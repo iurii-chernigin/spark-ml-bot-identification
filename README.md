@@ -15,4 +15,4 @@ We have statistics on user sessions, where some of them are [web crawlers](https
 | select_item_events | Number of product selects per session |
 | make_order_events | Number of product orders per session |
 | events_per_min | Average number of events per minutes for session |
-| is_bot | 0 is user, 1 is bot |
+| is_bot | Field is for model training and evaluation where 0 is user, 1 is bot |
