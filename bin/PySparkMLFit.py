@@ -61,7 +61,7 @@ def process(spark, data_path, model_path):
     # Train and save model
     train_df = spark.read.parquet(data_path)
     cv_model = cv.fit(train_df)
-    cv_model.write().save(model_path)
+    cv_model.write().overwrite().save(model_path)
     
 
 def main(data_path, model_path):
