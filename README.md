@@ -1,1 +1,5 @@
-# spark-ml-bot-identification
+# Bot identificaton 
+## Tools
+### Spark ML
+## Context
+User Sessions
